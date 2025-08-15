@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox and Grid Demo</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+
+    /* Flexbox is for one-dimensional layouts (row or column) */
+    .flex-container {
+      display: flex;
+      gap: 10px; /* Space between items */
+      background-color: #e0f2fe;
+      padding: 10px;
+    }
+    .flex-item {
+      flex: 1; /* Items will grow to fill space equally */
+      background-color: #38bdf8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Grid is for two-dimensional layouts (rows and columns) */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+      gap: 10px; /* Space between grid cells */
+      background-color: #fef9e7;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .grid-item {
+      background-color: #f59e0b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Flexbox Example</h2>
+  <!-- Flexbox lays items out in a single row -->
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h2>Grid Example</h2>
+  <!-- Grid creates a layout with rows and columns -->
+  <div class="grid-container">
+    <div class="grid-item">Cell A</div>
+    <div class="grid-item">Cell B</div>
+    <div class="grid-item">Cell C</div>
+    <div class="grid-item">Cell D</div>
+    <div class="grid-item">Cell E</div>
+    <div class="grid-item">Cell F</div>
+  </div>
+
+</body>
+</html>
